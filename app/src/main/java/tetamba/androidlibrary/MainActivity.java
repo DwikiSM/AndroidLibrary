@@ -17,6 +17,7 @@ import tetamba.androidlibrary.ButterKnife.ButterKnifeFragment;
 import tetamba.androidlibrary.Glide.GlideFragment;
 import tetamba.androidlibrary.Gson.GsonActivity;
 import tetamba.androidlibrary.Gson.GsonFragment;
+import tetamba.androidlibrary.Photoview.PhotoVIewFragment;
 import tetamba.androidlibrary.Retrofit.RetrofitFragment;
 import tetamba.androidlibrary.Saripaar.SaripaarFragment;
 import tetamba.androidlibrary.Volley.VolleyFragment;
@@ -105,7 +106,10 @@ public class MainActivity extends AppCompatActivity
         }
         // Photoview
         else if (id == R.id.nav_photoview) {
-
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragment_content, new PhotoVIewFragment())
+                    .commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

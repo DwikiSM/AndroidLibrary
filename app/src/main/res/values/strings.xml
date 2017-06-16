@@ -115,5 +115,40 @@
         \n}
     </string>
 
+    <string name="photoview_intro">
+        PhotoView bertujuan untuk membantu menghasilkan implementasi ImageView Android yang mudah digunakan.
+    </string>
+    <string name="photoview_intro2">
+         - Out of the box zooming, using multi-touch and double-tap.
+        \n - Scrolling, with smooth scrolling fling.
+        \n - Works perfectly when used in a scrolling parent (such as ViewPager).
+        \n - Allows the application to be notified when the displayed Matrix has changed. Useful for when you need to update your UI based on the current zoom/scroll position.
+        \n - Allows the application to be notified when the user taps on the Photo.
+    </string>
+    <string name="photoview_howtouse">
+        Add this in your root build.gradle file (not your module build.gradle file):
+        \nallprojects {
+        \n    repositories {
+        \n        maven { url "'https://jitpack.io'" }
+        \n    }
+        \n}
+        \n
+        \nThen, add the library to your module build.gradle
+        \ndependencies {
+        \n    compile "'com.github.chrisbanes:PhotoView:latest.release.here'"
+        \n}
+    </string>
+    <string name="photoview_content">
+        Pada xml:
+        \n&lt;com.github.chrisbanes.photoview.PhotoView
+        \n    android:id="@+id/photo_view"
+        \n    android:layout_width="match_parent"
+        \n    android:layout_height="match_parent"/>
+        \n
+        \nPada java:
+        \nPhotoView photoView = (PhotoView) findViewById(R.id.photo_view);
+        \nphotoView.setImageResource(R.drawable.image);
+    </string>
+    
     <string name="hello_blank_fragment">Hello</string>
 </resources>
