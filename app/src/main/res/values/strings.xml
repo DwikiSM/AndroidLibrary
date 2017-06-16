@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">AndroidLibrary</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="butterknife_intro">ButterKnife adalah sebuah library yang digunakan untuk mempermudah syntax</string>
+    <string name="butterknife_howtouse">dependencies {
+        \ncompile "'com.jakewharton:butterknife:8.6.0'"
+        \nannotationProcessor "'com.jakewharton:butterknife-compiler:8.6.0'"
+        \n}
+    </string>
+    <string name="butterknife_content">Beberapa annotasi yang dapat digunakan, yaitu:
+        \nResource Binding
+        \n@BindString(R.string.title) String title;
+        \n@BindDrawable(R.drawable.graphic) Drawable graphic;
+        \n@BindColor(R.color.red) int red; // int or ColorStateList field
+        \n@BindDimen(R.dimen.spacer) Float spacer;
+        \n
+        \nListener Binding
+        \n@OnClick(R.id.submit)
+        \npublic void submit(View view) {
+        \n}
+    </string>
+
+    <string name="saripaar_intro">Saripaar adalah sebuah library yang digunakan untuk mempermudah validasi form</string>
+    <string name="saripaar_howtouse">dependencies {
+        \ncompile "'com.mobsandgeeks:android-saripaar:2.0.3'"
+        \n}
+    </string>
+    <string name="saripaar_content">Step 1: Menggunakan Anotasi Saripaar
+        \n@NotEmpty
+        \n@Email
+        \nprivate EditText emailEditText;
+        \n@Password(min = 6, scheme = Password.Scheme.ALPHA_NUMERIC_MIXED_CASE_SYMBOLS)
+        \nprivate EditText passwordEditText;
+        \n
+        \nStep 2: Inisiasi Validator
+        \n@Override
+        \npublic void onCreate(Bundle savedInstanceState) {
+            \n\tsuper.onCreate(savedInstanceState);
+            \n\t// Code…
+            \n\tvalidator = new Validator(this);
+            \n\tvalidator.setValidationListener(this);
+            \n\t// More code…
+        \n}
+        \n
+        \nStep 3: Implementasi ValidationListener
+        \n@Override
+        \npublic void onValidationSucceeded() {
+            \n\t// do something
+        \n}
+        \n@Override
+        \npublic void onValidationFailed() {
+            \n\t// do something
+        \n}
+        \n
+        \nStep 4: Validasi
+        \nregisterButton.setOnClickListener(new OnClickListener() {
+            \n\t@Override
+            \n\tpublic void onClick(View v) {
+                \n\t\tvalidator.validate();
+            \n\t}
+        \n});
+    </string>
+
+    <string name="gson_intro">Gson adalah sebuah library yang digunakan untuk mempermudah pemrosesan JSON</string>
+    <string name="gson_howtouse">dependencies {
+        \ncompile "'com.google.code.gson:gson:2.8.1'"
+        \n}
+    </string>
+    <string name="gson_content"></string>
+
+
+    <string name="hello_blank_fragment">Hello</string>
+</resources>

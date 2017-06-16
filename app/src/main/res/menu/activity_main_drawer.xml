@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_butterknife"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="ButterKnife" />
+        <item
+            android:id="@+id/nav_saripaar"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Saripaar" />
+        <item
+            android:id="@+id/nav_glide"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Glide" />
+        <item
+            android:id="@+id/nav_gson"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Gson" />
+        <item
+            android:id="@+id/nav_volley"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Volley" />
+        <item
+            android:id="@+id/nav_retrofit"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Retrofit" />
+        <item
+            android:id="@+id/nav_photoview"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Photoview" />
+    </group>
+</menu>
