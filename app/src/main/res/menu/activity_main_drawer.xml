@@ -11,10 +11,6 @@
             android:icon="@drawable/ic_menu_manage"
             android:title="Saripaar" />
         <item
-            android:id="@+id/nav_glide"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Glide" />
-        <item
             android:id="@+id/nav_gson"
             android:icon="@drawable/ic_menu_manage"
             android:title="Gson" />
@@ -26,6 +22,10 @@
             android:id="@+id/nav_retrofit"
             android:icon="@drawable/ic_menu_manage"
             android:title="Retrofit" />
+        <item
+            android:id="@+id/nav_glide"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Glide" />
         <item
             android:id="@+id/nav_photoview"
             android:icon="@drawable/ic_menu_gallery"

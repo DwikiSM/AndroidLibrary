@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import tetamba.androidlibrary.ButterKnife.ButterKnifeFragment;
+import tetamba.androidlibrary.Glide.GlideFragment;
 import tetamba.androidlibrary.Gson.GsonActivity;
 import tetamba.androidlibrary.Gson.GsonFragment;
 import tetamba.androidlibrary.Retrofit.RetrofitFragment;
@@ -76,7 +77,10 @@ public class MainActivity extends AppCompatActivity
         }
         // Glide
         else if (id == R.id.nav_glide) {
-
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragment_content, new GlideFragment())
+                    .commit();
         }
         // Gson
         else if (id == R.id.nav_gson) {

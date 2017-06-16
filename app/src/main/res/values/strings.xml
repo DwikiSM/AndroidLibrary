@@ -70,6 +70,50 @@
     </string>
     <string name="gson_content"></string>
 
+    <string name="glide_intro">
+        Glide adalah pengelolaan media open source yang cepat dan efisien serta kerangka pemuatan gambar untuk Android yang membungkus decoding media, memori dan disk caching, dan penyatuan sumber daya menjadi antarmuka yang sederhana dan mudah digunakan.
+    </string>
+    <string name="glide_howtouse">
+        repositories {
+        \n  mavenCentral() // jcenter() works as well because it pulls from Maven Central
+        \n}
+
+        \ndependencies {
+        \n  compile "'com.github.bumptech.glide:glide:4.0.0-RC0'"
+        \n  compile "'com.android.support:support-v4:25.3.1'"
+        \n  annotationProcessor "'com.github.bumptech.glide:compiler:4.0.0-RC0'"
+        \n}
+    </string>
+    <string name="glide_content">
+        // For a simple view:
+        \n@Override public void onCreate(Bundle savedInstanceState) {
+        \n  .\..
+        \n  ImageView imageView = (ImageView) findViewById(R.id.my_image_view);
+        \n
+        \n  Glide.with(this).load("http://goo.gl/gEgYUd").into(imageView);
+        \n}
+        \n
+        \n// For a simple image list:
+        \n@Override public View getView(int position, View recycled, ViewGroup container) {
+        \n  final ImageView myImageView;
+        \n  if (recycled == null) {
+        \n    myImageView = (ImageView) inflater.inflate(R.layout.my_image_view, container, false);
+        \n  } else {
+        \n    myImageView = (ImageView) recycled;
+        \n  }
+        \n
+        \n  String url = myUrls.get(position);
+        \n
+        \n  Glide
+        \n    .with(myFragment)
+        \n    .load(url)
+        \n    .centerCrop()
+        \n    .placeholder(R.drawable.loading_spinner)
+        \n    .into(myImageView);
+        \n
+        \n  return myImageView;
+        \n}
+    </string>
 
     <string name="hello_blank_fragment">Hello</string>
 </resources>
