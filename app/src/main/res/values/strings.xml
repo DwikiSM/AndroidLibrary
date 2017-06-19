@@ -135,7 +135,7 @@
         \n
         \nThen, add the library to your module build.gradle
         \ndependencies {
-        \n    compile "'com.github.chrisbanes:PhotoView:latest.release.here'"
+        \n    compile "'com.github.chrisbanes:PhotoView:2.0.0'"
         \n}
     </string>
     <string name="photoview_content">
